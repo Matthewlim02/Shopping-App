@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+          <header>
+            <img src="https://i.pinimg.com/originals/39/5c/bd/395cbdc769cbbc96a8d123a5f1f16e80.jpg" alt="Shopping banner">
+          </header>
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-8">
+              <h1>Shopping List</h1>
+              <div>
+                <div class="form-row">
+                  <div class="col-8 mr-sm-2">
+                    <input type="text" class="form-control" placeholder="New item" id="addList" />
+                    <input type="hidden" id="saveIndex">
+                  </div>
+                  <button type="button" class="btn btn-success" id="addListBtn">
+                    Add Item
+                  </button>
+                  <button type="button" class="btn btn-primary" id="saveList">
+                    Save Item
+                  </button>
+                  <button type="button" id="deleteAll" class="btn btn-danger">
+                    Delete All
+                  </button>
+                </div>
+                <div>
+                  <table class="table table-striped mt-3 mb-0" id="addedList">
+                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
