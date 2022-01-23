@@ -93,15 +93,15 @@ let addedList = document.getElementById("addedList");
        
         let webList = localStorage.getItem("locallist");
         let list = JSON.parse(webList);   
-        let mytarget = e.target;
-        if(mytarget.classList[0] === 'text-success'){
-        let mytargetid = mytarget.getAttribute("id");   
-        mytargetpresibling = mytarget.parentElement.previousElementSibling.previousElementSibling;
-            for (keys in list[mytargetid]) {
-                if(keys == 'completeStatus' && list[mytargetid][keys]==true){
-                    list[mytargetid].completeStatus = false;
-                }else if(keys == 'completeStatus' && list[mytargetid][keys]==false){
-                    list[mytargetid].completeStatus = true;
+        let myTarget = e.target;
+        if(myTarget.classList[0] === 'text-success'){
+        let myTargetId = myTarget.getAttribute("id");   
+        myTargetPresibling = myTarget.parentElement.previousElementSibling.previousElementSibling;
+            for (keys in list[myTargetId]) {
+                if(keys == 'completeStatus' && list[myTargetId][keys]==true){
+                    list[myTargetId].completeStatus = false;
+                }else if(keys == 'completeStatus' && list[myTargetId][keys]==false){
+                    list[myTargetId].completeStatus = true;
                 }
               }
               
